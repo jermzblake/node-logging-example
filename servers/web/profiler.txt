@@ -1,0 +1,1232 @@
+Statistical profiling result from isolate-0x150040000-65989-v8.log, (1848 ticks, 13 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   1277   69.1%          /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+    248   13.4%          /usr/lib/system/libsystem_kernel.dylib
+     33    1.8%          /usr/lib/system/libsystem_pthread.dylib
+     29    1.6%          /usr/lib/system/libsystem_platform.dylib
+     27    1.5%          /usr/lib/system/libsystem_c.dylib
+     23    1.2%          /usr/lib/libc++.1.dylib
+     22    1.2%          /usr/lib/system/libsystem_malloc.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      6    0.3%    3.2%  LazyCompile: *normalizeString node:path:66:25
+      5    0.3%    2.6%  LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      5    0.3%    2.6%  LazyCompile: *attributeValue /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1151:27
+      4    0.2%    2.1%  LazyCompile: *skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      4    0.2%    2.1%  LazyCompile: *pp$7.readToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2471:28
+      4    0.2%    2.1%  LazyCompile: *pp$7.readString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2925:29
+      4    0.2%    2.1%  LazyCompile: *pp$7.readString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:3182:27
+      4    0.2%    2.1%  LazyCompile: *pp$7.next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2676:21
+      4    0.2%    2.1%  LazyCompile: *pp$3.parseExprAtom /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1759:32
+      4    0.2%    2.1%  LazyCompile: *parseChar /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:76:19
+      4    0.2%    2.1%  LazyCompile: *getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:1041:67
+      3    0.2%    1.6%  LazyCompile: *nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:753:53
+      2    0.1%    1.1%  RegExp: ^:([\w\-]+)
+      2    0.1%    1.1%  RegExp: ^- *(?:each|for) +([a-zA-Z_$][\w$]*)(?: *, *([a-zA-Z_$][\w$]*))? +in +([^\n]+)
+      2    0.1%    1.1%  RegExp: ^(break|case|catch|continue|debugger|default|do|else|finally|for|function|if|return|switch|throw|try|var|while|with|null|true|false|instanceof|typeof|void|delete|new|in|this|const|class|extends|export|import|super)$
+      2    0.1%    1.1%  LazyCompile: *t.<computed> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babel-types/lib/index.js:346:36
+      2    0.1%    1.1%  LazyCompile: *scan /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:185:17
+      2    0.1%    1.1%  LazyCompile: *resolve node:path:1091:10
+      2    0.1%    1.1%  LazyCompile: *pp$7.readWord1 /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:3304:26
+      2    0.1%    1.1%  LazyCompile: *pp$7.next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2405:23
+      2    0.1%    1.1%  LazyCompile: *pp$6.processComment /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4498:32
+      2    0.1%    1.1%  LazyCompile: *pp$3.parseMaybeAssign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1735:33
+      2    0.1%    1.1%  LazyCompile: *pp$3.parseExprAtom /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:3606:31
+      2    0.1%    1.1%  LazyCompile: *parseUntil /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:47:20
+      2    0.1%    1.1%  LazyCompile: *init /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:517:39
+      2    0.1%    1.1%  LazyCompile: *extends /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:609:22
+      2    0.1%    1.1%  LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      2    0.1%    1.1%  LazyCompile: *base.AssignmentExpression.base.AssignmentPattern /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:299:63
+      2    0.1%    1.1%  LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      2    0.1%    1.1%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:676:37
+      1    0.1%    0.5%  RegExp: ^while +([^\n]+)
+      1    0.1%    0.5%  RegExp: ^mixin +([-\w]+)(?: *\((.*)\))? *
+      1    0.1%    0.5%  RegExp: ^extends?\b
+      1    0.1%    0.5%  RegExp: ^doctype *([^\n]*)
+      1    0.1%    0.5%  RegExp: ^default\b
+      1    0.1%    0.5%  RegExp: ^default
+      1    0.1%    0.5%  RegExp: ^block
+      1    0.1%    0.5%  RegExp: ^[ \t]*(\n|$)
+      1    0.1%    0.5%  RegExp: ^(break|case|catch|continue|debugger|default|do|else|finally|for|function|if|return|switch|throw|try|var|while|with|null|true|false|instanceof|typeof|void|delete|new|in|this|const|class|extends|export|import|super)$ {1}
+      1    0.1%    0.5%  RegExp: ^(Named)?Block$
+      1    0.1%    0.5%  RegExp: ^(?:each|for)\b
+      1    0.1%    0.5%  RegExp: ^(?:each|for) +([a-zA-Z_$][\w$]*)(?: *, *([a-zA-Z_$][\w$]*))? * in *([^\n]+)
+      1    0.1%    0.5%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$
+      1    0.1%    0.5%  RegExp: ^&attributes\b
+      1    0.1%    0.5%  RegExp: \r\n|\r
+      1    0.1%    0.5%  RegExp: \=+$
+      1    0.1%    0.5%  RegExp: [\0\b\t\n\r\x1a\"\'\\]
+      1    0.1%    0.5%  RegExp: (?:^|\W)chunked(?:$|\W)
+      1    0.1%    0.5%  LazyCompile: *toConstant /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/constantinople/lib/index.js:9:24
+      1    0.1%    0.5%  LazyCompile: *skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/walk.js:162:23
+      1    0.1%    0.5%  LazyCompile: *readWord1 /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:1469:53
+      1    0.1%    0.5%  LazyCompile: *pushAsyncContext node:internal/async_hooks:539:26
+      1    0.1%    0.5%  LazyCompile: *pp.eat /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:553:18
+      1    0.1%    0.5%  LazyCompile: *pp$7.readInt /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:3102:24
+      1    0.1%    0.5%  LazyCompile: *pp$7.nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2459:28
+      1    0.1%    0.5%  LazyCompile: *pp$7.next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2676:21
+      1    0.1%    0.5%  LazyCompile: *pp$7.getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2942:33
+      1    0.1%    0.5%  LazyCompile: *pp$7.getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2942:33
+      1    0.1%    0.5%  LazyCompile: *pp$7.finishToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2572:30
+      1    0.1%    0.5%  LazyCompile: *pp$5.startNode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2250:28
+      1    0.1%    0.5%  LazyCompile: *pp$5.startNode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2517:26
+      1    0.1%    0.5%  LazyCompile: *pp$3.parseSubscripts /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:3507:33
+      1    0.1%    0.5%  LazyCompile: *pp$3.parseMaybeUnary /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1674:34
+      1    0.1%    0.5%  LazyCompile: *pp$3.parseMaybeAssign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1586:35
+      1    0.1%    0.5%  LazyCompile: *pp$3.parseIdentifier /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4321:33
+      1    0.1%    0.5%  LazyCompile: *pp$3.parseExprAtom /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1931:30
+      1    0.1%    0.5%  LazyCompile: *pp$1.parseStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:675:33
+      1    0.1%    0.5%  LazyCompile: *parseText /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-parser/index.js:277:22
+      1    0.1%    0.5%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
+      1    0.1%    0.5%  LazyCompile: *isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/index.js:14:22
+      1    0.1%    0.5%  LazyCompile: *identifier /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:127:22
+      1    0.1%    0.5%  LazyCompile: *has /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:259:13
+      1    0.1%    0.5%  LazyCompile: *call /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:828:17
+      1    0.1%    0.5%  LazyCompile: *buffer /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:181:20
+      1    0.1%    0.5%  LazyCompile: *attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-parser/index.js:1166:18
+      1    0.1%    0.5%  LazyCompile: *append /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:653:19
+      1    0.1%    0.5%  LazyCompile: *Node /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4390:16
+      1    0.1%    0.5%  Function: ^validateNumber node:internal/validators:176:24
+      1    0.1%    0.5%  Function: ^tt.parenR.updateContext.tt.braceR.updateContext /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2330:63
+      1    0.1%    0.5%  Function: ^tt._function.updateContext /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2366:40
+      1    0.1%    0.5%  Function: ^tryStatSync node:fs:419:21
+      1    0.1%    0.5%  Function: ^tag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:369:16
+      1    0.1%    0.5%  Function: ^stringify /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/js-stringify/index.js:4:19
+      1    0.1%    0.5%  Function: ^socketListenerWrap node:_http_server:1118:37
+      1    0.1%    0.5%  Function: ^realpathSync node:fs:2474:22
+      1    0.1%    0.5%  Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      1    0.1%    0.5%  Function: ^pp$7.skipSpace /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2781:26
+      1    0.1%    0.5%  Function: ^pp$3.parseMaybeAssign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1586:35
+      1    0.1%    0.5%  Function: ^pp$3.parseExprOp /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:1802:28
+      1    0.1%    0.5%  Function: ^pp$3.parseExprList /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2146:32
+      1    0.1%    0.5%  Function: ^pp$3.parseExprList /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2400:30
+      1    0.1%    0.5%  Function: ^pp$2.parseBindingListItem /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1448:39
+      1    0.1%    0.5%  Function: ^pp$2.checkLVal /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1466:28
+      1    0.1%    0.5%  Function: ^pp$1.parseVar /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1025:27
+      1    0.1%    0.5%  Function: ^parserOnIncomingClient node:_http_client:605:32
+      1    0.1%    0.5%  Function: ^onevent /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/ee-first/index.js:81:26
+      1    0.1%    0.5%  Function: ^lookup /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mime/mime.js:102:19
+      1    0.1%    0.5%  Function: ^ignore /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/walk.js:163:18
+      1    0.1%    0.5%  Function: ^getEncodingOps node:buffer:684:24
+      1    0.1%    0.5%  Function: ^get node:internal/streams/writable:846:8
+      1    0.1%    0.5%  Function: ^get node:internal/streams/readable:1155:8
+      1    0.1%    0.5%  Function: ^get node:internal/console/constructor:209:14
+      1    0.1%    0.5%  Function: ^formatter /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/client.js:128:32
+      1    0.1%    0.5%  Function: ^debug /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:134:16
+      1    0.1%    0.5%  Function: ^copy /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/lib/helpers.js:42:15
+      1    0.1%    0.5%  Function: ^containsDotFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/send/index.js:925:26
+      1    0.1%    0.5%  Function: ^code /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:978:17
+      1    0.1%    0.5%  Function: ^className /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:436:22
+      1    0.1%    0.5%  Function: ^base.Function /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:242:26
+      1    0.1%    0.5%  Function: ^attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1    0.1%    0.5%  Function: ^attributesBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1296:29
+      1    0.1%    0.5%  Function: ^applyYield /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-linker/index.js:145:20
+      1    0.1%    0.5%  Function: ^applyPlugins /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:43:22
+      1    0.1%    0.5%  Function: ^append /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:653:19
+      1    0.1%    0.5%  Function: ^advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1    0.1%    0.5%  Function: ^WritableState node:internal/streams/writable:77:23
+      1    0.1%    0.5%  Function: ^TokenStream.peek /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/token-stream/index.js:16:39
+      1    0.1%    0.5%  Function: ^<anonymous> node:internal/util:350:24
+      1    0.1%    0.5%  Function: ^<anonymous> node:_http_agent:333:25
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+    176    9.5%   93.1%  JavaScript
+      0    0.0%    0.0%  C++
+     64    3.5%   33.9%  GC
+   1659   89.8%          Shared libraries
+     13    0.7%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1277   69.1%  /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+    232   18.2%    Function: ^compileFunction node:vm:316:25
+    230   99.1%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+    230  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+    219   95.2%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+    181   82.6%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+     38   17.4%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+     11    4.8%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     11  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+    131   10.3%    Function: ^readSync node:fs:705:18
+    131  100.0%      Function: ^tryReadSync node:fs:444:21
+    131  100.0%        Function: ^readFileSync node:fs:465:22
+    122   93.1%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+    107   87.7%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+     15   12.3%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      3    2.3%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      3  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      3    2.3%          LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:27:60
+      3  100.0%            /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      2    1.5%          LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1218:39
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+     81    6.3%    /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+     20   24.7%      LazyCompile: *Parser /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:432:29
+     14   70.0%        LazyCompile: *isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/index.js:14:22
+     14  100.0%          Function: ^isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:67:26
+      9   64.3%            LazyCompile: *attributeValue /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1151:27
+      5   35.7%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      6   30.0%        Function: ^isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/index.js:14:22
+      6  100.0%          Function: ^isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:67:26
+      3   50.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      3   50.0%            LazyCompile: *attributeValue /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1151:27
+      7    8.6%      Function: ^unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      7  100.0%        Function: ^addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      7  100.0%          Function: ^compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      7  100.0%            Function: ^generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      4    4.9%      /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      2   50.0%        LazyCompile: *buffer /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:181:20
+      1   50.0%          Function: ^visitText /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:608:22
+      1  100.0%            LazyCompile: *visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      1   50.0%          Function: ^visitTag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:526:21
+      1  100.0%            LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1   25.0%        LazyCompile: ~getCLIOptionsFromBinding node:internal/options:18:34
+      1  100.0%          LazyCompile: ~getOptionValue node:internal/options:44:24
+      1  100.0%            LazyCompile: ~patchProcessObject node:internal/process/pre_execution:112:28
+      1   25.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      3    3.7%      LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      2   66.7%        Function: ^visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      2  100.0%          LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      2  100.0%            Function: ^visitTag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:526:21
+      1   33.3%        Function: ^visitTag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:526:21
+      1  100.0%          LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%            Function: ^visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      3    3.7%      LazyCompile: *buffer /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:181:20
+      3  100.0%        LazyCompile: *visitTag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:526:21
+      3  100.0%          LazyCompile: *visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      3  100.0%            LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      2    2.5%      LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:396:36
+      2  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      2  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      2  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      2    2.5%      LazyCompile: *stringify /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/js-stringify/index.js:4:19
+      1   50.0%        LazyCompile: *addAttribute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-attrs/index.js:46:24
+      1  100.0%          LazyCompile: *compileAttrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-attrs/index.js:22:22
+      1  100.0%            LazyCompile: *attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:802:18
+      1   50.0%        Function: ^addAttribute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-attrs/index.js:46:24
+      1  100.0%          Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-attrs/index.js:75:25
+      1  100.0%            /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      2    2.5%      LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:155:28
+      2  100.0%        /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      2  100.0%          Function: ^findGlobals /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:30:21
+      2  100.0%            Function: ^addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      2    2.5%      Function: ^timeout /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/PendingOperation.js:33:17
+      2  100.0%        Function: ^PendingOperation /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/PendingOperation.js:6:16
+      2  100.0%          Function: ^acquire /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:76:12
+      2  100.0%            Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/client.js:335:44
+      2    2.5%      Function: ^realpathSync node:fs:2474:22
+      2  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:440:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1   50.0%            Function: ^tryPackage node:internal/modules/cjs/loader:385:20
+      1   50.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      2    2.5%      Function: ^check /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:103:10
+      2  100.0%        Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:284:41
+      2  100.0%          Function: ^listOnTimeout node:internal/timers:512:25
+      2  100.0%            Function: ^processTimers node:internal/timers:492:25
+      2    2.5%      Function: ^Module node:internal/modules/cjs/loader:197:16
+      2  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      2  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      2  100.0%            Function: ^require node:internal/modules/cjs/helpers:102:31
+      1    1.2%      LazyCompile: ~unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      1  100.0%        Function: ^addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1  100.0%          LazyCompile: ~compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1  100.0%            Function: ^generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      1    1.2%      LazyCompile: ~populateMaps /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mime-types/index.js:154:23
+      1  100.0%        Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mime-types/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.2%      LazyCompile: ~isIPv6 node:internal/net:38:16
+      1  100.0%        LazyCompile: ~isIP node:internal/net:45:14
+      1  100.0%          LazyCompile: ~calculateServerName node:_http_agent:355:29
+      1  100.0%            LazyCompile: ~addRequest node:_http_agent:248:49
+      1    1.2%      LazyCompile: ~init /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/@colors/colors/lib/colors.js:174:14
+      1  100.0%        Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/@colors/colors/lib/colors.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.2%      LazyCompile: ~format /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/sqlstring/lib/SqlString.js:76:35
+      1  100.0%        LazyCompile: ~Connection.format /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/Connection.js:267:39
+      1  100.0%          LazyCompile: ~query /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/Connection.js:180:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/dialects/mysql/index.js:155:44
+      1    1.2%      LazyCompile: ~each /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:950:17
+      1  100.0%        LazyCompile: ~callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%          LazyCompile: ~advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1  100.0%            LazyCompile: ~callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1    1.2%      LazyCompile: ~attribute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1059:22
+      1  100.0%        LazyCompile: ~attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1  100.0%          Function: ^callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%            Function: ^advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1    1.2%      LazyCompile: ~Lexer /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:23:15
+      1  100.0%        LazyCompile: ~lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      1  100.0%          LazyCompile: ~lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+      1  100.0%            LazyCompile: ~loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1    1.2%      LazyCompile: ~<anonymous> :10030:63
+      1  100.0%        /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%          LazyCompile: ~map :10020:17
+      1  100.0%            Function: ~<anonymous> :9572:10
+      1    1.2%      LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:109:27
+      1  100.0%        /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%          LazyCompile: ~check /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:103:10
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:284:41
+      1    1.2%      LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1  100.0%        LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1  100.0%          LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1    1.2%      LazyCompile: *visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      1  100.0%        LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%          LazyCompile: *visitTag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:526:21
+      1  100.0%            LazyCompile: *visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      1    1.2%      LazyCompile: *stat node:internal/modules/cjs/loader:158:14
+      1  100.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    1.2%      LazyCompile: *realpathSync node:fs:2474:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:440:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1    1.2%      Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1    1.2%      Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/connect-session-knex/node_modules/knex/lib/constants.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    1.2%      Function: ^visitMixin /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:428:23
+      1  100.0%        LazyCompile: *visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      1  100.0%          LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%            Function: ^compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1    1.2%      Function: ^stat node:internal/modules/cjs/loader:158:14
+      1  100.0%        Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1    1.2%      Function: ^pp$1.parseFor /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:997:27
+      1  100.0%        Function: ^pp$1.parseForStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:787:36
+      1  100.0%          LazyCompile: *pp$1.parseStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:675:33
+      1  100.0%            LazyCompile: *pp$1.parseBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:974:29
+      1    1.2%      Function: ^keywordRegexp /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:428:23
+      1  100.0%        Function: ^Parser /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:432:29
+      1  100.0%          Function: ^isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/index.js:14:22
+      1  100.0%            Function: ^isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:67:26
+      1    1.2%      Function: ^keywordRegexp /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:428:23
+      1  100.0%        Function: ^Parser /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:432:29
+      1  100.0%          Function: ^parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:3377:15
+      1  100.0%            Function: ^reallyParse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:21:21
+      1    1.2%      Function: ^format /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/content-type/index.js:65:17
+      1  100.0%        Function: ^setCharset /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/utils.js:248:41
+      1  100.0%          Function: ^send /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^done /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/response.js:1033:27
+      1    1.2%      Function: ^findGlobals /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:30:21
+      1  100.0%        Function: ^addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1  100.0%          Function: ^compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1  100.0%            Function: ^generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      1    1.2%      Function: ^createQuery /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/Connection.js:25:46
+      1  100.0%        Function: ^query /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/Connection.js:180:44
+      1  100.0%          Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/dialects/mysql/index.js:155:44
+      1  100.0%            Function: ^Promise._execute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/debuggability.js:382:38
+      1    1.2%      Function: ^conditional /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:892:24
+      1  100.0%        LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%          LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1  100.0%            LazyCompile: *getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      1    1.2%      Function: ^compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1  100.0%        Function: ^generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      1  100.0%          Function: ^compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      1  100.0%            Function: ^exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1    1.2%      Function: ^calculateServerName node:_http_agent:355:29
+      1  100.0%        Function: ^addRequest node:_http_agent:248:49
+      1  100.0%          Function: ^ClientRequest node:_http_client:134:23
+      1  100.0%            Function: ^request node:http:96:17
+      1    1.2%      Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:102:31
+      1  100.0%            Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/core-js/library/fn/symbol/iterator.js:1:1
+      1    1.2%      Function: ^Caseless.get /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/caseless/index.js:27:35
+      1  100.0%        Function: ^resp.getHeader /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/caseless/index.js:59:29
+      1  100.0%          Function: ^Request.onRequestResponse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:880:48
+      1  100.0%            LazyCompile: *emit node:events:460:44
+      1    1.2%      Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:18:19
+      1  100.0%        Function: ^isReservedWord /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:1583:60
+      1  100.0%          Function: ^pp$3.checkReservedWord /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4345:35
+      1  100.0%            Function: ^pp$3.parseIdentifier /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4321:33
+     42    3.3%    Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+     42  100.0%      Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+     42  100.0%        Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+     16   38.1%          LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+     16  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+     14   33.3%          Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+     14  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+     12   28.6%          Function: ^compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+     12  100.0%            Function: ^exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+     33    2.6%    LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+     29   87.9%      LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+     20   69.0%        LazyCompile: *getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+     20  100.0%          Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+     20  100.0%            Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+      9   31.0%        LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      9  100.0%          Function: ^getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      9  100.0%            Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      4   12.1%      Function: ^advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      4  100.0%        LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      4  100.0%          Function: ^getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      3   75.0%            Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      1   25.0%            LazyCompile: ~lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+     32    2.5%    Function: ^parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-parser/index.js:10:15
+     32  100.0%      Function: ^parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:102:21
+     32  100.0%        Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+     14   43.8%          LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+     14  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      9   28.1%          Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      9  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      8   25.0%          Function: ^compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      8  100.0%            Function: ^exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1    3.1%          LazyCompile: ~compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      1  100.0%            LazyCompile: ~exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+     31    2.4%    LazyCompile: *parseChar /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:76:19
+     13   41.9%      LazyCompile: *parseUntil /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:47:20
+      7   53.8%        Function: ^bracketExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:233:30
+      5   71.4%          LazyCompile: *call /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:828:17
+      5  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1   14.3%          Function: ^call /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:828:17
+      1  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1   14.3%          Function: ^attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      5   38.5%        LazyCompile: *attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      5  100.0%          LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      5  100.0%            LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1    7.7%        Function: ^addText /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:462:21
+      1  100.0%          Function: ^text /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:574:17
+      1  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      9   29.0%      LazyCompile: *parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:28:15
+      6   66.7%        LazyCompile: *attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      6  100.0%          LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      6  100.0%            LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      3   33.3%        Function: ^assertNestingCorrect /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:91:34
+      3  100.0%          Function: ^attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      3  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      5   16.1%      LazyCompile: *attributeValue /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1151:27
+      5  100.0%        LazyCompile: *attribute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1059:22
+      4   80.0%          LazyCompile: *attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      4  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1   20.0%          Function: ^attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      2    6.5%      LazyCompile: *addText /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:462:21
+      2  100.0%        LazyCompile: *addText /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:462:21
+      2  100.0%          Function: ^text /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:574:17
+      2  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1    3.2%      Function: ^parseUntil /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:47:20
+      1  100.0%        Function: ^addText /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:462:21
+      1  100.0%          Function: ^text /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:574:17
+      1  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1    3.2%      Function: ^parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:28:15
+      1  100.0%        Function: ^assertNestingCorrect /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:91:34
+      1  100.0%          Function: ^attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+     28    2.2%    Function: ^read node:internal/modules/package_json_reader:16:14
+     28  100.0%      Function: ^readPackage node:internal/modules/cjs/loader:326:21
+     28  100.0%        Function: ^resolveExports node:internal/modules/cjs/loader:519:24
+     28  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+     23   82.1%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      5   17.9%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:904:35
+     25    2.0%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     20   80.0%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      4   20.0%        Function: ~<anonymous> node:http:1:1
+      4  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      2   10.0%        Function: ~<anonymous> node:tls:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2   10.0%        Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2   10.0%        Function: ~<anonymous> node:assert:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    5.0%        LazyCompile: ~lookupAndConnect node:net:1129:26
+      1  100.0%          LazyCompile: ~Socket.connect node:net:1061:36
+      1  100.0%            LazyCompile: ~connect node:net:219:17
+      1    5.0%        LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      1  100.0%          LazyCompile: ~get node:crypto:369:8
+      1  100.0%            /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1    5.0%        LazyCompile: ~lazyLoadStreams node:fs:2907:25
+      1  100.0%          LazyCompile: ~get ReadStream node:fs:3050:17
+      1  100.0%            /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1    5.0%        Function: ~<anonymous> node:tty:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    5.0%        Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.0%        Function: ~<anonymous> node:https:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    5.0%        Function: ~<anonymous> node:child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.0%        Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.0%        Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.0%        Function: ~<anonymous> node:_http_client:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5   20.0%      Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      5  100.0%        Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      5  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      5  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+     21    1.6%    Function: ^openSync node:fs:591:18
+     21  100.0%      Function: ^readFileSync node:fs:465:22
+     12   57.1%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     11   91.7%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+     11  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    8.3%          LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      6   28.6%        Function: ^read /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:68:26
+      6  100.0%          Function: ^read /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:138:20
+      3   50.0%            LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      3   50.0%            Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      2    9.5%        Function: ^handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      2  100.0%          Function: ^exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      2  100.0%            Function: ^exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1    4.8%        LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+     18    1.4%    Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3   16.7%      Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      3  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3  100.0%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      3  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2   11.1%      LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2   11.1%      Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2  100.0%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2   11.1%      Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2   11.1%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      2  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2  100.0%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.6%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    5.6%      Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:574:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1    5.6%      Function: ~<anonymous> node:internal/readline/interface:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.6%      Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.6%      Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.6%      Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    5.6%      Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+     16    1.3%    Function: ^stat node:internal/modules/cjs/loader:158:14
+     10   62.5%      Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      9   90.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      9  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      9  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1   10.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      6   37.5%      Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      6  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      5   83.3%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      5  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1   16.7%          Function: ^tryPackage node:internal/modules/cjs/loader:385:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+     14    1.1%    LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+     12   85.7%      LazyCompile: *getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+     12  100.0%        Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+     12  100.0%          Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+     12  100.0%            Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      2   14.3%      LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      2  100.0%        Function: ^getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      2  100.0%          Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      2  100.0%            Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+     13    1.0%    Function: ^load /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:9:14
+     13  100.0%      Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      6   46.2%        Function: ^compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      6  100.0%          Function: ^exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      6  100.0%            Function: ^handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      3   23.1%        Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      3  100.0%          LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      3  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      2   15.4%        LazyCompile: ~compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      2  100.0%          LazyCompile: ~exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      2  100.0%            LazyCompile: ~handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      2   15.4%        LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      2  100.0%          LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      2  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+     13    1.0%    Function: ^internalConnect node:net:997:25
+     13  100.0%      Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+     13  100.0%        Function: ^emitLookup node:net:1186:46
+     13  100.0%          Function: ^onlookup node:dns:105:18
+
+    248   13.4%  /usr/lib/system/libsystem_kernel.dylib
+      7    2.8%    /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1   14.3%      LazyCompile: ~getStack /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/depd/index.js:381:19
+      1  100.0%        LazyCompile: ~depd /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/depd/index.js:103:15
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/body-parser/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1   14.3%      LazyCompile: ~getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%        LazyCompile: ~syncExports node:internal/bootstrap/loaders:304:14
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:290:15
+      1  100.0%            /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1   14.3%      LazyCompile: ~enable /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/connect-session-knex/node_modules/debug/src/common.js:150:17
+      1  100.0%        LazyCompile: ~setup /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/connect-session-knex/node_modules/debug/src/common.js:7:15
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/connect-session-knex/node_modules/debug/src/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1   14.3%      LazyCompile: *base.NewExpression.base.CallExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:308:53
+      1  100.0%        LazyCompile: *skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1  100.0%          LazyCompile: *base.BinaryExpression.base.LogicalExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:295:59
+      1  100.0%            LazyCompile: *skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1   14.3%      Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/lib/winston.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1   14.3%      Function: ^unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      1  100.0%        Function: ^addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1  100.0%          Function: ^compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1  100.0%            Function: ^generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      1   14.3%      Function: ^pp$7.readString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:3182:27
+      1  100.0%        Function: ^pp$7.getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2942:33
+      1  100.0%          Function: ^pp$7.readToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2727:26
+      1  100.0%            Function: ^pp$7.nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2715:26
+      4    1.6%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:1:1
+      4  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      4  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      3    1.2%    LazyCompile: *stat node:internal/modules/cjs/loader:158:14
+      2   66.7%      Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      2  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      2  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1   33.3%      Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      3    1.2%    LazyCompile: *realpathSync node:fs:2474:22
+      3  100.0%      Function: ^toRealPath node:internal/modules/cjs/loader:440:20
+      2   66.7%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1   33.3%        Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+
+     33    1.8%  /usr/lib/system/libsystem_pthread.dylib
+      4   12.1%    /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1   25.0%      LazyCompile: ~unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      1  100.0%        LazyCompile: ~addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1  100.0%          LazyCompile: ~compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1  100.0%            LazyCompile: ~generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      1   25.0%      LazyCompile: *pp$3.parseExprAtom /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1759:32
+      1  100.0%        LazyCompile: *pp$3.parseExprOps /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1635:31
+      1  100.0%          LazyCompile: *pp$3.parseMaybeAssign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1586:35
+      1  100.0%            LazyCompile: *pp$1.parseStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:675:33
+      1   25.0%      LazyCompile: *nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:753:53
+      1  100.0%        LazyCompile: *pp$3.parseIdentifier /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4321:33
+      1  100.0%          LazyCompile: *pp$3.parseSubscripts /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:3507:33
+      1  100.0%            LazyCompile: *pp$3.parseExprOps /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:3401:30
+      1   25.0%      /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    3.0%    LazyCompile: ~v4 /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uuid/v4.js:4:12
+      1  100.0%      LazyCompile: ~toSQL /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/raw.js:117:24
+      1  100.0%        LazyCompile: ~unwrapRaw /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/formatter.js:118:53
+      1  100.0%          LazyCompile: ~whereRaw /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/query/compiler.js:609:30
+      1  100.0%            LazyCompile: ~where /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/query/compiler.js:380:24
+      1    3.0%    LazyCompile: ~statSync node:fs:1588:18
+      1  100.0%      LazyCompile: ~tryStat /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/view.js:174:17
+      1  100.0%        LazyCompile: ~resolve /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/view.js:146:42
+      1  100.0%          LazyCompile: ~lookup /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/view.js:104:40
+      1  100.0%            LazyCompile: ~View /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/view.js:52:14
+      1    3.0%    LazyCompile: ~realpathSync node:fs:2474:22
+      1  100.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:440:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    3.0%    LazyCompile: ~promiseSetter /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/join.js:20:33
+      1  100.0%      LazyCompile: ~module.exports /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/join.js:3:9
+      1  100.0%        LazyCompile: ~module.exports /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:2:26
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/bluebird.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    3.0%    LazyCompile: ~pp$3.parseSubscripts /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1883:32
+      1  100.0%      Function: ^pp$3.parseExprSubscripts /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1870:36
+      1  100.0%        LazyCompile: ~pp$3.parseMaybeUnary /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1828:32
+      1  100.0%          Function: ^pp$3.parseExprOp /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1802:28
+      1  100.0%            Function: ^pp$3.parseExprOps /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1789:29
+      1    3.0%    LazyCompile: ~pp$1.parseFunctionParams /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1142:36
+      1  100.0%      LazyCompile: ~pp$1.parseFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1109:30
+      1  100.0%        LazyCompile: ~pp$3.parseExprAtom /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1931:30
+      1  100.0%          LazyCompile: ~pp$3.parseExprSubscripts /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1870:36
+      1  100.0%            LazyCompile: ~pp$3.parseMaybeUnary /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1828:32
+      1    3.0%    LazyCompile: ~parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/packets/RowDataPacket.js:22:15
+      1  100.0%      LazyCompile: ~Query.RowDataPacket /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/sequences/Query.js:152:44
+      1  100.0%        Function: ^Protocol._parsePacket /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/Protocol.js:242:43
+      1  100.0%          LazyCompile: ~_parsePacket /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/Parser.js:419:54
+      1  100.0%            Function: ^write /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/Parser.js:29:40
+      1    3.0%    LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%      Function: ^processTimers node:internal/timers:492:25
+      1    3.0%    LazyCompile: ~link /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-linker/index.js:11:14
+      1  100.0%      LazyCompile: ~compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      1  100.0%        LazyCompile: ~exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1  100.0%          LazyCompile: ~handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      1  100.0%            LazyCompile: ~exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1    3.0%    LazyCompile: ~handle /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%      LazyCompile: ~trim_prefix /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:293:23
+      1  100.0%        LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:280:64
+      1  100.0%          LazyCompile: ~process_params /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:338:47
+      1  100.0%            LazyCompile: ~next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:177:16
+      1    3.0%    LazyCompile: ~forwarded /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/forwarded/index.js:24:20
+      1  100.0%      LazyCompile: ~alladdrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/proxy-addr/index.js:55:19
+      1  100.0%        LazyCompile: ~proxyaddr /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/proxy-addr/index.js:222:20
+      1  100.0%          LazyCompile: ~ip /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/request.js:349:36
+      1  100.0%            LazyCompile: ~getip /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/morgan/index.js:485:16
+      1    3.0%    LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%        Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.0%    LazyCompile: ~createDebug /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/node_modules/debug/src/debug.js:62:21
+      1  100.0%      Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/raw.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    3.0%    LazyCompile: ~assertEncoding node:internal/fs/utils:156:24
+      1  100.0%      LazyCompile: ~getOptions node:internal/fs/utils:319:20
+      1  100.0%        LazyCompile: ~readFileSync node:fs:465:22
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1025:33
+      1    3.0%    LazyCompile: ~Request /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:93:18
+      1  100.0%      LazyCompile: ~request /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/index.js:42:18
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/util:350:24
+      1  100.0%          /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%            LazyCompile: ~fn node:internal/util:349:14
+      1    3.0%    LazyCompile: ~Parser /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:432:29
+      1  100.0%      LazyCompile: ~parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:3377:15
+      1  100.0%        LazyCompile: ~reallyParse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:21:21
+      1  100.0%          LazyCompile: ~findGlobals /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:30:21
+      1  100.0%            LazyCompile: ~addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1    3.0%    LazyCompile: ~Module.require node:internal/modules/cjs/loader:1053:36
+      1  100.0%      LazyCompile: ~require node:internal/modules/cjs/helpers:102:31
+      1  100.0%        Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/finalhandler/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.0%    LazyCompile: *pp$7.readString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:3182:27
+      1  100.0%      LazyCompile: *pp$7.getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2942:33
+      1  100.0%        LazyCompile: *pp$7.next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2676:21
+      1  100.0%          LazyCompile: *pp$3.parseMaybeAssign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1735:33
+      1  100.0%            LazyCompile: *pp$1.parseStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:720:31
+      1    3.0%    LazyCompile: *ignore /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:163:16
+      1  100.0%      LazyCompile: *base.Pattern /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:253:25
+      1  100.0%        LazyCompile: *base.AssignmentExpression.base.AssignmentPattern /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:299:63
+      1  100.0%          LazyCompile: *skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1  100.0%            LazyCompile: *base.ExpressionStatement.base.ParenthesizedExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:176:12
+      1    3.0%    LazyCompile: *c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:40:15
+      1  100.0%      Function: ^base.Program.base.BlockStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:169:47
+      1  100.0%        LazyCompile: *c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:40:15
+      1  100.0%          Function: ^skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1  100.0%            LazyCompile: *c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:40:15
+      1    3.0%    LazyCompile: *Parser /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:432:29
+      1  100.0%      LazyCompile: *isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/index.js:14:22
+      1  100.0%        Function: ^isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:67:26
+      1  100.0%          LazyCompile: *attributeValue /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1151:27
+      1  100.0%            LazyCompile: *attribute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1059:22
+      1    3.0%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    3.0%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/connect-session-knex/node_modules/knex/lib/migrate/configuration-merger.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    3.0%    Function: ^walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1  100.0%      LazyCompile: ~link /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-linker/index.js:11:14
+      1  100.0%        LazyCompile: ~compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      1  100.0%          LazyCompile: ~exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1  100.0%            LazyCompile: ~handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      1    3.0%    Function: ^load /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:9:14
+      1  100.0%      Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1  100.0%        Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      1  100.0%          LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1    3.0%    Function: ^last /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4486:14
+      1  100.0%      Function: ^pp$6.processComment /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4498:32
+      1  100.0%        Function: ^finishNodeAt /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4423:22
+      1  100.0%          Function: ^pp$4.finishNode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:4433:28
+      1  100.0%            Function: ^pp$3.parseLiteral /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:3775:30
+      1    3.0%    Function: ^isExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:67:26
+      1  100.0%      LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%        Function: ^assertExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:73:30
+      1  100.0%          Function: ^attributeValue /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1151:27
+      1  100.0%            Function: ^attribute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1059:22
+      1    3.0%    Function: ^applyPlugins /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:43:22
+      1  100.0%      Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+      1  100.0%        Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1  100.0%          Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      1  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1    3.0%    Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1  100.0%      LazyCompile: ~writevGeneric node:internal/stream_base_commons:122:23
+      1  100.0%        Function: ^Socket._writeGeneric node:net:891:42
+      1  100.0%          LazyCompile: ~Socket._writev node:net:923:36
+      1  100.0%            Function: ^doWrite node:internal/streams/writable:401:17
+
+     29    1.6%  /usr/lib/system/libsystem_platform.dylib
+      3   10.3%    /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1   33.3%      LazyCompile: ~unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      1  100.0%        LazyCompile: ~addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1  100.0%          LazyCompile: ~compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1  100.0%            LazyCompile: ~generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      1   33.3%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1   33.3%      /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%        Function: ^stat node:internal/modules/cjs/loader:158:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      2    6.9%    Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      2  100.0%      Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+      2  100.0%        Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1   50.0%          Function: ^compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      1  100.0%            Function: ^exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1   50.0%          Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      1  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1    3.4%    LazyCompile: ~where /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/query/compiler.js:380:24
+      1  100.0%      LazyCompile: ~del /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/query/compiler.js:503:20
+      1  100.0%        LazyCompile: ~toSQL /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/query/compiler.js:108:24
+      1  100.0%          LazyCompile: ~toSQL /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/query/builder.js:118:24
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/runner.js:47:71
+      1    3.4%    LazyCompile: ~text /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:574:17
+      1  100.0%      Function: ^callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%        LazyCompile: ~advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1  100.0%          Function: ^callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%            Function: ^getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      1    3.4%    LazyCompile: ~getProxyFromURI /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/lib/getProxyFromURI.js:40:26
+      1  100.0%      LazyCompile: ~Request.init /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:141:35
+      1  100.0%        Function: ^Request /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:93:18
+      1  100.0%          Function: ^request /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/index.js:42:18
+      1  100.0%            Function: ^<anonymous> node:internal/util:350:24
+      1    3.4%    LazyCompile: ~checkCancel /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/finally.js:28:21
+      1  100.0%      Function: ^finallyHandler /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/finally.js:49:24
+      1  100.0%        Function: ^tryCatcher /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/util.js:12:20
+      1  100.0%          Function: ^Promise._settlePromiseFromHandler /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:531:56
+      1  100.0%            Function: ^Promise._settlePromise /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:577:44
+      1    3.4%    LazyCompile: ~Writable /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:229:18
+      1  100.0%      LazyCompile: ~TransportStream /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston-transport/index.js:18:66
+      1  100.0%        LazyCompile: ~Console /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/lib/winston/transports/console.js:26:14
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/servers/shared/lib/logger.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    3.4%    LazyCompile: ~Promise._then /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:248:36
+      1  100.0%      LazyCompile: ~Promise._passThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/finally.js:92:42
+      1  100.0%        LazyCompile: ~Promise.tap /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/finally.js:110:34
+      1  100.0%          LazyCompile: ~create /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/knex/lib/client.js:282:30
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:315:28
+      1    3.4%    LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%      LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%        Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    3.4%    LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/lodash/_shortOut.js:21:18
+      1  100.0%      LazyCompile: ~baseRest /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/lodash/_baseRest.js:13:18
+      1  100.0%        LazyCompile: ~createAssigner /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/lodash/_createAssigner.js:11:24
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/lodash/merge.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    3.4%    LazyCompile: *readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%      Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    3.4%    LazyCompile: *pp$7.nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2459:28
+      1  100.0%      Function: ^parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:513:43
+      1  100.0%        Function: ^parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:3097:17
+      1  100.0%          Function: ^reallyParse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:8:21
+      1  100.0%            Function: ^unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      1    3.4%    Function: ~<anonymous> node:internal/crypto/webcrypto:1:1
+      1  100.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      1  100.0%            LazyCompile: ~get node:crypto:369:8
+      1    3.4%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    3.4%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/resolve/lib/core.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    3.4%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/body-parser/index.js:1:1
+      1  100.0%      LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          LazyCompile: ~Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:807:24
+      1    3.4%    Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      1  100.0%      Function: ^resolveExports node:internal/modules/cjs/loader:519:24
+      1  100.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    3.4%    Function: ^pp$7.skipSpace /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2525:28
+      1  100.0%      Function: ^pp$7.nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2459:28
+      1  100.0%        Function: ^pp$7.next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2405:23
+      1  100.0%          Function: ^pp.eat /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:534:20
+      1  100.0%            Function: ^pp.semicolon /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:580:26
+      1    3.4%    Function: ^pp$7.getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2942:33
+      1  100.0%      Function: ^pp$7.readToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2727:26
+      1  100.0%        Function: ^pp$7.nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2715:26
+      1  100.0%          Function: ^pp$7.next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2676:21
+      1  100.0%            Function: ^pp$3.parseExprOp /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:1802:28
+      1    3.4%    Function: ^parserOnMessageComplete node:_http_common:135:33
+      1  100.0%      /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%        Function: ^socketOnData node:_http_client:527:22
+      1  100.0%          LazyCompile: *emit node:events:460:44
+      1  100.0%            Function: ^addChunk node:internal/streams/readable:312:18
+      1    3.4%    Function: ^load /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:9:14
+      1  100.0%      Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1  100.0%        LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      1  100.0%          LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+
+     27    1.5%  /usr/lib/system/libsystem_c.dylib
+      6   22.2%    /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1   16.7%      LazyCompile: ~getStack /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/depd/index.js:381:19
+      1  100.0%        LazyCompile: ~depd /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/depd/index.js:103:15
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/body-parser/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1   16.7%      LazyCompile: ~check /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:103:10
+      1  100.0%        LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/tarn/lib/Pool.js:284:41
+      1  100.0%          LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%            LazyCompile: ~processTimers node:internal/timers:492:25
+      1   16.7%      LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%        Function: ^visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      1  100.0%          LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%            Function: ^visitTag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:526:21
+      1   16.7%      Function: ^setDoctype /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:167:23
+      1  100.0%        Function: ^visitDoctype /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:411:25
+      1  100.0%          LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%            Function: ^visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      1   16.7%      Function: ^scan /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:185:17
+      1  100.0%        Function: ^extends /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:609:22
+      1  100.0%          Function: ^callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%            Function: ^advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1   16.7%      Function: ^identifier /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:127:22
+      1  100.0%        LazyCompile: *c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:40:15
+      1  100.0%          Function: ^skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1  100.0%            LazyCompile: *c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:40:15
+      2    7.4%    LazyCompile: ~realpathSync node:fs:2474:22
+      2  100.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:440:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:541:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    3.7%    LazyCompile: ~wrap /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-runtime/wrap.js:4:14
+      1  100.0%      LazyCompile: ~exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1  100.0%        LazyCompile: ~handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      1  100.0%          LazyCompile: ~exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1  100.0%            LazyCompile: ~exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1    3.7%    LazyCompile: ~slowCases node:internal/util:168:19
+      1  100.0%      Function: ^normalizeEncoding node:internal/util:163:27
+      1  100.0%        Function: ^validateEncoding node:internal/validators:348:26
+      1  100.0%          Function: ^update node:internal/crypto/hash:99:40
+      1  100.0%            LazyCompile: ~exports.sign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/cookie-signature/index.js:16:24
+      1    3.7%    LazyCompile: ~pp$3.parseMaybeAssign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1586:35
+      1  100.0%      LazyCompile: ~pp$3.parseExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1569:34
+      1  100.0%        LazyCompile: ~pp$1.parseStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:675:33
+      1  100.0%          LazyCompile: ~pp$1.parseBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:974:29
+      1  100.0%            LazyCompile: ~pp$3.parseFunctionBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2094:36
+      1    3.7%    LazyCompile: ~join node:path:1166:7
+      1  100.0%      Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/servers/web/app.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1025:33
+      1    3.7%    LazyCompile: ~fastparse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/parseurl/index.js:95:20
+      1  100.0%      LazyCompile: ~parseurl /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/parseurl/index.js:35:19
+      1  100.0%        LazyCompile: ~getPathname /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:537:21
+      1  100.0%          LazyCompile: ~next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            LazyCompile: ~handle /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:136:31
+      1    3.7%    LazyCompile: ~callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%      LazyCompile: ~advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1  100.0%        LazyCompile: ~callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%          LazyCompile: ~getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      1  100.0%            LazyCompile: ~lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      1    3.7%    LazyCompile: ~_createClass /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/internal/streams/buffer_list.js:13:22
+      1  100.0%      LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/internal/streams/buffer_list.js:29:10
+      1  100.0%        Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/internal/streams/buffer_list.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.7%    LazyCompile: ~ServerResponse node:_http_server:192:24
+      1  100.0%      LazyCompile: ~parserOnIncoming node:_http_server:968:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    3.7%    LazyCompile: ~Hmac node:internal/crypto/hash:131:14
+      1  100.0%      LazyCompile: ~createHmac node:crypto:164:20
+      1  100.0%        LazyCompile: ~exports.sign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/cookie-signature/index.js:16:24
+      1  100.0%          LazyCompile: ~setcookie /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express-session/index.js:655:19
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express-session/index.js:220:28
+      1    3.7%    LazyCompile: ~BufferList /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/internal/streams/buffer_list.js:30:22
+      1  100.0%      LazyCompile: ~ReadableState /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:106:23
+      1  100.0%        LazyCompile: ~Readable /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:169:18
+      1  100.0%          LazyCompile: ~Duplex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/_stream_duplex.js:58:16
+      1  100.0%            LazyCompile: ~Transform /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:98:19
+      1    3.7%    LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/connect-session-knex/lib/index.js:34:11
+      1  100.0%      LazyCompile: ~tryCatcher /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/util.js:12:20
+      1  100.0%        LazyCompile: ~Promise._settlePromiseFromHandler /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:531:56
+      1  100.0%          LazyCompile: ~Promise._settlePromise /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:577:44
+      1  100.0%            Function: ^Promise._settlePromise0 /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:644:45
+      1    3.7%    LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:92:42
+      1  100.0%      /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%        LazyCompile: ~VariableDeclaration /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/index.js:84:37
+      1  100.0%          Function: ^c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:40:15
+      1  100.0%            LazyCompile: ~skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1    3.7%    LazyCompile: *parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:28:15
+      1  100.0%      Function: ^assertNestingCorrect /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:91:34
+      1  100.0%        Function: ^attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1  100.0%          LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%            LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1    3.7%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    3.7%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/supports-color/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    3.7%    Function: ^ignore /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:163:16
+      1  100.0%      LazyCompile: *skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1  100.0%        LazyCompile: *base.BinaryExpression.base.LogicalExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:295:59
+      1  100.0%          LazyCompile: *skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:162:21
+      1  100.0%            LazyCompile: *base.AssignmentExpression.base.AssignmentPattern /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/walk.js:299:63
+      1    3.7%    Function: ^handleErrorFromBinding node:internal/fs/utils:344:32
+      1  100.0%      Function: ^readSync node:fs:705:18
+      1  100.0%        Function: ^tryReadSync node:fs:444:21
+      1  100.0%          Function: ^readFileSync node:fs:465:22
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.7%    Function: ^applyPlugins /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:43:22
+      1  100.0%      Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+      1  100.0%        Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1  100.0%          Function: ^<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      1  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+
+     23    1.2%  /usr/lib/libc++.1.dylib
+      3   13.0%    /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1   33.3%      Function: ^pp.canInsertSemicolon /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:582:33
+      1  100.0%        Function: ^pp$3.parseExprAtom /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1931:30
+      1  100.0%          Function: ^pp$3.parseExprSubscripts /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1870:36
+      1  100.0%            Function: ^pp$3.parseMaybeUnary /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:1828:32
+      1   33.3%      Function: ^pp$7.readNumber /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2875:29
+      1  100.0%        LazyCompile: *pp$7.getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2686:35
+      1  100.0%          LazyCompile: *pp$7.readToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2471:28
+      1  100.0%            LazyCompile: *pp$7.nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2459:28
+      1   33.3%      /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    4.3%    LazyCompile: ~sendFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/send/index.js:712:51
+      1  100.0%      LazyCompile: ~pipe /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/send/index.js:506:43
+      1  100.0%        LazyCompile: ~serveStatic /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/serve-static/index.js:72:31
+      1  100.0%          LazyCompile: ~handle /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:293:23
+      1    4.3%    LazyCompile: ~resp.setHeader /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/caseless/index.js:52:29
+      1  100.0%      LazyCompile: ~Request.init /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:141:35
+      1  100.0%        LazyCompile: ~Request /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:93:18
+      1  100.0%          LazyCompile: ~request /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/index.js:42:18
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/util:350:24
+      1    4.3%    LazyCompile: ~ok node:assert:410:12
+      1  100.0%      LazyCompile: ~bracketExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:233:30
+      1  100.0%        LazyCompile: ~attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1  100.0%          Function: ^callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%            LazyCompile: ~advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1    4.3%    LazyCompile: ~loadPlugins /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:1618:54
+      1  100.0%      Function: ^Parser /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:1563:18
+      1  100.0%        Function: ^parseExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:7308:25
+      1  100.0%          Function: ^isConstant /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/constantinople/lib/index.js:317:20
+      1  100.0%            LazyCompile: ~toConstant /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/constantinople/lib/index.js:339:20
+      1    4.3%    LazyCompile: ~initializeGlobalConsole node:internal/console/constructor:688:33
+      1  100.0%      LazyCompile: ~patchProcessObject node:internal/process/pre_execution:112:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.3%    LazyCompile: ~handle /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%      LazyCompile: ~trim_prefix /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:293:23
+      1  100.0%        LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:280:64
+      1  100.0%          LazyCompile: ~process_params /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:338:47
+      1  100.0%            LazyCompile: ~next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/router/index.js:177:16
+      1    4.3%    LazyCompile: ~getSupportLevel /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/@colors/colors/lib/system/supports-colors.js:142:25
+      1  100.0%      Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/@colors/colors/lib/system/supports-colors.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    4.3%    LazyCompile: ~Caseless.set /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/caseless/index.js:4:35
+      1  100.0%      Function: ^resp.setHeader /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/caseless/index.js:52:29
+      1  100.0%        LazyCompile: ~end /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:528:24
+      1  100.0%          LazyCompile: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:523:18
+      1  100.0%            Function: ^processImmediate node:internal/timers:426:28
+      1    4.3%    LazyCompile: *parseUntil /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:47:20
+      1  100.0%      Function: ^bracketExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:233:30
+      1  100.0%        LazyCompile: *call /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:828:17
+      1  100.0%          LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%            LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1    4.3%    LazyCompile: *parseChar /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/character-parser/index.js:76:19
+      1  100.0%      LazyCompile: *attributeValue /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1151:27
+      1  100.0%        LazyCompile: *attribute /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1059:22
+      1  100.0%          LazyCompile: *attrs /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1269:18
+      1  100.0%            LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1    4.3%    Function: ~<anonymous> :1:20
+      1  100.0%      Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    4.3%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    4.3%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/core-js/library/modules/_classof.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    4.3%    Function: ^wrap /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-runtime/wrap.js:4:14
+      1  100.0%      Function: ^exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1  100.0%        Function: ^handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      1  100.0%          Function: ^exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1  100.0%            Function: ^exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1    4.3%    Function: ^visitTag /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:526:21
+      1  100.0%      LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%        Function: ^visitBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:369:23
+      1  100.0%          LazyCompile: *visit /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:256:18
+      1  100.0%            Function: ^visitConditional /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:691:29
+      1    4.3%    Function: ^pp$3.parseExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1569:34
+      1  100.0%      Function: ^pp$1.parseStatement /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:675:33
+      1  100.0%        Function: ^pp$1.parseBlock /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:974:29
+      1  100.0%          LazyCompile: ~pp$3.parseFunctionBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:2094:36
+      1  100.0%            LazyCompile: ~pp$1.parseFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:1056:32
+      1    4.3%    Function: ^include /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:729:20
+      1  100.0%      LazyCompile: *callLexerFunction /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1448:31
+      1  100.0%        LazyCompile: *advance /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1469:20
+      1  100.0%          LazyCompile: *getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      1  100.0%            Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      1    4.3%    Function: ^exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1  100.0%      Function: ^exports.renderFile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:409:30
+      1  100.0%        Function: ^exports.__express /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:460:29
+      1  100.0%          Function: ^render /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/view.js:133:40
+      1  100.0%            Function: ^tryRender /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/express/lib/application.js:655:19
+
+     22    1.2%  /usr/lib/system/libsystem_malloc.dylib
+      4   18.2%    /Users/jermz/.nvm/versions/node/v18.12.1/bin/node
+      1   25.0%      LazyCompile: ~parse node:url:184:37
+      1  100.0%        LazyCompile: ~urlParse node:url:152:18
+      1  100.0%          LazyCompile: ~Request.init /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:141:35
+      1  100.0%            LazyCompile: ~Request /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/request/request.js:93:18
+      1   25.0%      LazyCompile: ~isIPv6 node:internal/net:38:16
+      1  100.0%        LazyCompile: ~isIP node:internal/net:45:14
+      1  100.0%          LazyCompile: ~lookupAndConnect node:net:1129:26
+      1  100.0%            LazyCompile: ~Socket.connect node:net:1061:36
+      1   25.0%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%        Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      1   25.0%      Function: ^unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      1  100.0%        Function: ^addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1  100.0%          Function: ^compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:111:20
+      1  100.0%            Function: ^generateCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-code-gen/index.js:31:22
+      1    4.5%    LazyCompile: ~skipSpace /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:836:53
+      1  100.0%      Function: ^nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:753:53
+      1  100.0%        Function: ^next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:682:43
+      1  100.0%          Function: ^eat /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:696:41
+      1  100.0%            LazyCompile: ~pp.expect /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/babylon/lib/index.js:1748:22
+      1    4.5%    LazyCompile: ~processTimers node:internal/timers:492:25
+      1    4.5%    LazyCompile: ~pp$7.getTokenFromCode /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2942:33
+      1  100.0%      LazyCompile: ~pp$7.readToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2727:26
+      1  100.0%        LazyCompile: ~pp$7.nextToken /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2715:26
+      1  100.0%          LazyCompile: ~pp$7.next /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2676:21
+      1  100.0%            LazyCompile: ~pp$3.parseIdent /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/acorn-globals/node_modules/acorn/dist/acorn.js:2429:27
+      1    4.5%    LazyCompile: ~pp$4.raise /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:2485:22
+      1  100.0%      LazyCompile: ~pp.unexpected /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:622:25
+      1  100.0%        LazyCompile: *pp$3.parseExprAtom /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:1931:30
+      1  100.0%          LazyCompile: *pp$3.parseExprOps /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:1789:29
+      1  100.0%            LazyCompile: *pp$3.parseMaybeAssign /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/is-expression/node_modules/acorn/dist/acorn.js:1735:33
+      1    4.5%    LazyCompile: ~parseUnsignedNumber /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/Parser.js:122:68
+      1  100.0%      LazyCompile: ~OkPacket.parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/packets/OkPacket.js:18:36
+      1  100.0%        LazyCompile: ~Protocol._parsePacket /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/Protocol.js:242:43
+      1  100.0%          LazyCompile: ~_parsePacket /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/Parser.js:419:54
+      1  100.0%            LazyCompile: ~write /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/mysql/lib/protocol/Parser.js:29:40
+      1    4.5%    LazyCompile: ~parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:102:21
+      1  100.0%      LazyCompile: ~loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1  100.0%        LazyCompile: ~compileBody /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:81:21
+      1  100.0%          LazyCompile: ~exports.compile /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:237:27
+      1  100.0%            LazyCompile: ~handleTemplateCache /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:209:30
+      1    4.5%    LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%      LazyCompile: ~processTimers node:internal/timers:492:25
+      1    4.5%    LazyCompile: ~_ :3078:15
+      1  100.0%      Function: ~<anonymous> :3076:10
+      1  100.0%        Function: ~<anonymous> :1:20
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/uglify-js/tools/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    4.5%    LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%          Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1    4.5%    LazyCompile: ~Parser /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:426:31
+      1  100.0%      Function: ^parse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/acorn.js:3097:17
+      1  100.0%        Function: ^reallyParse /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:8:21
+      1  100.0%          Function: ^unwrapReturns /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:73:23
+      1  100.0%            Function: ^addWith /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/index.js:24:17
+      1    4.5%    LazyCompile: *getTokens /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:1514:23
+      1  100.0%      Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      1  100.0%        Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+      1  100.0%          Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1  100.0%            LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      1    4.5%    Function: ~<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/triple-beam/config/npm.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    4.5%    Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-lexer/index.js:10:13
+      1  100.0%      Function: ^lex /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug/lib/index.js:89:19
+      1  100.0%        Function: ^loadString /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:40:34
+      1  100.0%          LazyCompile: *<anonymous> /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-load/index.js:13:29
+      1  100.0%            LazyCompile: *walkAST /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/pug-walk/index.js:4:17
+      1    4.5%    Function: ^base.UnaryExpression.base.UpdateExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/walk.js:292:59
+      1  100.0%      Function: ^c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/walk.js:57:17
+      1  100.0%        Function: ^skipThrough /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/walk.js:162:23
+      1  100.0%          Function: ^c /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/walk.js:57:17
+      1  100.0%            Function: ^base.BinaryExpression.base.LogicalExpression /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/with/node_modules/acorn/dist/walk.js:295:61
+      1    4.5%    Function: ^Promise._then /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:248:36
+      1  100.0%      LazyCompile: ~Promise.then /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/bluebird/js/release/promise.js:143:35
+      1  100.0%        LazyCompile: ~dbCleanup /Users/jermz/code-box/mycode/learning/rock-paper-scissors/node_modules/connect-session-knex/lib/index.js:32:19
+      1  100.0%          Function: ^listOnTimeout node:internal/timers:512:25
+      1  100.0%            Function: ^processTimers node:internal/timers:492:25
+
